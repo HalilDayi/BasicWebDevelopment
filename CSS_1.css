@@ -1,0 +1,90 @@
+﻿body{
+    margin: 0px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+h4{
+    font-size: 15px;
+}
+
+.headline{
+    color: white;
+    text-align: center;
+}
+
+header{
+    background-color: lightseagreen;
+    padding: 60px;
+}
+
+nav{
+    display: flex;
+    background-color: dimgrey;
+}
+nav a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 14px 20px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'leftArea rightArea rightArea';
+}
+
+.grid-item-1{
+    grid-area: leftArea;
+    background-color: gainsboro;
+    height: 100%;
+    padding: 20px;
+}
+
+.grid-item-2{
+    grid-area: rightArea;
+    background-color: ghostwhite;
+    height: 100%;
+    padding: 20px;
+}
+
+footer{
+    background-color: grey;
+    padding: 30px;
+}
+
+.fakeImg{
+    background-color: darkslategray;
+    width: 100%;
+}
+
+.infoSticker{
+    position: fixed;
+    background-color: yellow;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    padding: 10px;
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 800px){
+    .grid-item-1{
+        grid-area: 1 / span 3;
+    }
+    .grid-item-2{
+        grid-area: 2 / span 3;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
