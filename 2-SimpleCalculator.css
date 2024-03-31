@@ -1,0 +1,43 @@
+﻿.operand,
+.operator,
+.delete-btn {
+    padding: 15px;
+    border: none;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.operand {
+    color: white;
+    background-color: black;
+}
+
+.operator {
+    background-color: orange;
+}
+
+.delete-btn {
+    background-color: darkred;
+    font-weight: bold;
+    font-size: 15px;
+    grid-area: 5 / 2 / 5 / span 2;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'auto auto auto auto';
+    height: 50%;
+    width: 50%;
+    position: relative;
+    left: 20%;
+    padding: 50px;
+    grid-auto-columns: minmax(0, 1fr);
+}
+
+.js-p {
+    grid-area: 6 / 2 / 6 / 4;
+    font-family: Arial;
+    font-weight: bold;
+    position: relative;
+    left: 20%;
+}
