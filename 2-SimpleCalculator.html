@@ -3,35 +3,44 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <title>Simpe Calculator</title>
-    <link rel="stylesheet" href="2-SimpleCalculator.css"/>
+    <link rel="stylesheet" href="2-SimpleCalculator.css" />
 </head>
 <body>
-    <div class="grid-container">
-        <button onclick="calculate(this)" class="operand">1</button>
-        <button onclick="calculate(this)" class="operand">2</button>
-        <button onclick="calculate(this)" class="operand">3</button>
-        <button onclick="calculate(this)" class="operator">+</button>
-        
-        <button onclick="calculate(this)" class="operand">4</button>
-        <button onclick="calculate(this)" class="operand">5</button>
-        <button onclick="calculate(this)" class="operand">6</button>
-        <button onclick="calculate(this)" class="operator">-</button>
-        
-        <button onclick="calculate(this)" class="operand">7</button>
-        <button onclick="calculate(this)" class="operand">8</button>
-        <button onclick="calculate(this)" class="operand">9</button>
-        <button onclick="calculate(this)" class="operator">*</button>
-        
-        <button onclick="calculate(this)" class="operand">0</button>
-        <button onclick="calculate(this)" class="operand">.</button>
-        <button onclick="calculate(this)" class="operator">=</button>
-        <button onclick="calculate(this)" class="operator">/</button>
-        
-        <button onclick="del() " class="delete-btn">DELETE</button>
-        <p class="js-p"></p>
+    <div class="flex-container">
+        <header>
+            <div class="welcoming">Welcome To The Calculator</div>
+        </header>
+        <div class="grid-container">
+            <button onclick="calculate(this)" class="operand">1</button>
+            <button onclick="calculate(this)" class="operand">2</button>
+            <button onclick="calculate(this)" class="operand">3</button>
+            <button onclick="calculate(this)" class="operator">+</button>
+
+            <button onclick="calculate(this)" class="operand">4</button>
+            <button onclick="calculate(this)" class="operand">5</button>
+            <button onclick="calculate(this)" class="operand">6</button>
+            <button onclick="calculate(this)" class="operator">-</button>
+
+            <button onclick="calculate(this)" class="operand">7</button>
+            <button onclick="calculate(this)" class="operand">8</button>
+            <button onclick="calculate(this)" class="operand">9</button>
+            <button onclick="calculate(this)" class="operator">*</button>
+
+            <button onclick="calculate(this)" class="operand">0</button>
+            <button onclick="calculate(this)" class="operand">.</button>
+            <button onclick="calculate(this)" class="operator">=</button>
+            <button onclick="calculate(this)" class="operator">/</button>
+
+            <button onclick="del() " class="delete-btn">DELETE</button>
+            <p class="js-p"></p>
+        </div>
+        <div class="animate"></div>
+        <div class="second-animate"></div>
+        <div class="third-animate"></div>
+        <div class="forth-animate"></div>
     </div>
-    
     <script src="2-SimpleCalculator.js"></script>
 </body>
 </html>
